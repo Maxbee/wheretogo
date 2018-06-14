@@ -9,12 +9,21 @@
 import Header from "./components/Header"
 import Swiper from './components/HomeSwiper'
 import Icons from './components/Icon'
+import axios from 'axios'
 export default {
   name: "Home",
   components: {
     Header,
     Swiper,
     Icons
+  },
+  methods:{
+      getData(res){
+          console.log(res)
+      }
+  },
+  mounted () {
+      axios.get('/static/mock/index.json').then(this.getData)
   }
 };
 </script>

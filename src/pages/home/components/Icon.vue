@@ -16,6 +16,7 @@
 </template>
 
 <script>
+
 export default {
   name: "HomeIcon",
   data() {
@@ -111,6 +112,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import '~styles/varibles.styl'
 .icons {
     overflow: hidden;
     height: 0;
